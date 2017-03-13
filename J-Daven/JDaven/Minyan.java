@@ -4,6 +4,8 @@
  */
 public class Minyan {
 
+
+    private double mDistance;
     private int mId;
     private String mName;
     private String mAddress1;
@@ -62,6 +64,13 @@ public class Minyan {
     private double mLatitude;
     private double mLongitude;
 
+    public double getDistance() {
+        return mDistance;
+    }
+
+    public void setDistance(double distance) {
+        mDistance = distance;
+    }
     public int getId() {
         return mId;
     }
