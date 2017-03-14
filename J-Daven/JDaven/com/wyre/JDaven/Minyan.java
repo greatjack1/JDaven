@@ -1,6 +1,8 @@
+package com.wyre.JDaven;
+
 /**
  * Created by yaakov on 3/12/17.
- * This class ecapsulates a Minyan and its davening times
+ * This class ecapsulates a com.wyre.JDaven.Minyan and its davening times
  */
 public class Minyan {
 
@@ -71,6 +73,7 @@ public class Minyan {
     public void setDistance(double distance) {
         mDistance = distance;
     }
+
     public int getId() {
         return mId;
     }
