@@ -20,13 +20,11 @@ public class JDavenTest {
 
     }
 
-
     @Test
     public void TestJDavenFull() {
         System.out.println("test started");
         try {
             JDaven daven = new JDaven("kollel bnei torah", 20);
-
         } catch (Exception ex) {
             ex.printStackTrace();
 

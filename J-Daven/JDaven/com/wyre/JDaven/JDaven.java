@@ -46,9 +46,8 @@ public class JDaven {
      *
      * @param zipcode The zipcode to get minyanim nearby from
      */
-    public JDaven(int zipcode) {
-
-
+    public JDaven(int zipcode) throws IOException {
+        processJson(gDApiRetreiver(mBaseUrl + "zip=" + zipcode));
     }
 
     /**
@@ -58,9 +57,8 @@ public class JDaven {
      * @param numOfResults The amount of results that you want to receive, max of 20
      */
 
-    public JDaven(int zipcode, int numOfResults) {
-
-
+    public JDaven(int zipcode, int numOfResults) throws IOException {
+        processJson(gDApiRetreiver(mBaseUrl + "zip=" + zipcode + "&results=" + numOfResults));
     }
 
     /**
@@ -69,7 +67,7 @@ public class JDaven {
      */
     public JDaven(double latitude, double longitude) {
 
-
+        processJson(gDApiRetreiver())
     }
 
     /**
