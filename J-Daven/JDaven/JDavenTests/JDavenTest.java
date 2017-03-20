@@ -21,16 +21,91 @@ public class JDavenTest {
     }
 
     @Test
-    public void TestJDavenFull() {
+    public void TestShulName() {
         System.out.println("test started");
         try {
-            //  JDaven daven = new JDaven("kollel bnei torah", 20);
-            minyanim my = new minyanim();
-            Gson gson = new Gson();
-            System.out.println(gson.toJson(my));
+            JDaven daven = new JDaven("kollel bnei torah", 20);
         } catch (Exception ex) {
             ex.printStackTrace();
 
+            minyanim my = new minyanim();
+            Gson gson = new Gson();
+            System.out.println(gson.toJson(my));
+        }
+
+    }
+
+    @Test
+    public void TestZipCode() {
+        System.out.println("test started");
+        try {
+            JDaven daven = new JDaven("kollel bnei torah", 20);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+
+            minyanim my = new minyanim();
+            Gson gson = new Gson();
+            System.out.println(gson.toJson(my));
+        }
+
+    }
+
+    @Test
+    public void TestLatitudeLongitude() {
+        System.out.println("test started");
+        try {
+            JDaven daven = new JDaven("kollel bnei torah", 20);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+
+            minyanim my = new minyanim();
+            Gson gson = new Gson();
+            System.out.println(gson.toJson(my));
+        }
+
+    }
+
+    @Test
+    public void TestMultipleResults() {
+        System.out.println("test started");
+        try {
+            JDaven daven = new JDaven("kollel bnei torah", 20);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+
+            minyanim my = new minyanim();
+            Gson gson = new Gson();
+            System.out.println(gson.toJson(my));
+        }
+
+    }
+
+    @Test
+    public void TestJDavenFull() {
+        System.out.println("test started");
+        try {
+            JDaven daven = new JDaven("kollel bnei torah", 20);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+
+            minyanim my = new minyanim();
+            Gson gson = new Gson();
+            System.out.println(gson.toJson(my));
+        }
+
+    }
+
+    @Test
+    public void TestJDavenstable() {
+        System.out.println("test started");
+        try {
+            JDaven daven = new JDaven("kollel bnei torah", 20);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+
+            minyanim my = new minyanim();
+            Gson gson = new Gson();
+            System.out.println(gson.toJson(my));
         }
 
     }

@@ -5,660 +5,659 @@ package com.wyre.JDaven;
  * Created by yaakov on 3/15/17.
  */
 public class minyanim {
-    private double mdistance = 0.0;
-    private int mID = 0;
-    private String mName = "";
-    private String mAddress = "";
-    private String mAddress2 = "";
-    private String mCity = "";
-    private String mState = "";
-    private String mZip = "";
-    private String mCountry = "";
-    private String mPhone1 = "";
-    private String mPhone2 = "";
-    private String mEmail = "";
-    private String mWebsite = "";
-    private String mRabbi = "";
-    private String mShacharisSun1 = "";
-    private String mShacharisSun2 = "";
-    private String mShacharisSun3 = "";
-    private String mShacharisSun4 = "";
-    private String mShacharisSun5 = "";
-    private String mShacharisSunTxt = "";
-    private String mShacharisMTh1 = "";
-    private String mShacharisMTh2 = "";
-    private String mShacharisMTh3 = "";
-    private String mShacharisMTh4 = "";
-    private String mShacharisMTh5 = "";
-    private String mShacharisMThTxt = "";
-    private String mShacharisTWF1 = "";
-    private String mShacharisTWF2 = "";
-    private String mShacharisTWF3 = "";
-    private String mShacharisTWF4 = "";
-    private String mShacharisTWF5 = "";
-    private String mShacharisTWFTxt = "";
-    private String mShacharisRCh1 = "";
-    private String mShacharisRCh2 = "";
-    private String mShacharisRCh3 = "";
-    private String mShacharisRCh4 = "";
-    private String mShacharisRCh5 = "";
-    private String mShacharisRChTxt = "";
-    private String mMincha1 = "";
-    private String mMincha2 = "";
-    private String mMinchaText = "";
-    private String mMaariv1 = "";
-    private String mMaariv2 = "";
-    private String mMaariv_Text = "";
-    private String mFridayMincha = "";
-    private String mFridayMinchaText = "";
-    private String mShabbosShacharis = "";
-    private String mShabbosShacharis2 = "";
-    private String mShabbosShacharis3 = "";
-    private String mShabbosShacharisText = "";
-    private String mShabbosMincha = "";
-    private String mShabbosMinchaText = "";
-    private String mShabbosMaariv = "";
-    private String mShabbosMaarivText = "";
-    private String mNusach = "";
-    private String mMiscellaneous = "";
-    private String mShiur = "";
-    private String mlatitude = "";
-    private String mlongitude = "";
-    private String mSubmitterName = "";
-    private String mSubmitterEmail = "";
-    private String mRemote_computer_name = "";
-    private String mUser_name = "";
-    private String mBrowser_type = "";
-    private String mAdded = "";
-    private String mUpdated = "";
-    private String mimg1 = "";
-
-    private String mimg2 = "";
-    private String mimg3 = "";
-    private String mimg4 = "";
-    private String mimg5 = "";
-    private String mimg1thumb = "";
+    private double distance = 0.0;
+    private int ID = 0;
+    private String Name = "";
+    private String Address = "";
+    private String Address2 = "";
+    private String City = "";
+    private String State = "";
+    private String Zip = "";
+    private String Country = "";
+    private String Phone1 = "";
+    private String Phone2 = "";
+    private String Email = "";
+    private String Website = "";
+    private String Rabbi = "";
+    private String ShacharisSun1 = "";
+    private String ShacharisSun2 = "";
+    private String ShacharisSun3 = "";
+    private String ShacharisSun4 = "";
+    private String ShacharisSun5 = "";
+    private String ShacharisSunTxt = "";
+    private String ShacharisMTh1 = "";
+    private String ShacharisMTh2 = "";
+    private String ShacharisMTh3 = "";
+    private String ShacharisMTh4 = "";
+    private String ShacharisMTh5 = "";
+    private String ShacharisMThTxt = "";
+    private String ShacharisTWF1 = "";
+    private String ShacharisTWF2 = "";
+    private String ShacharisTWF3 = "";
+    private String ShacharisTWF4 = "";
+    private String ShacharisTWF5 = "";
+    private String ShacharisTWFTxt = "";
+    private String ShacharisRCh1 = "";
+    private String ShacharisRCh2 = "";
+    private String ShacharisRCh3 = "";
+    private String ShacharisRCh4 = "";
+    private String ShacharisRCh5 = "";
+    private String ShacharisRChTxt = "";
+    private String Mincha1 = "";
+    private String Mincha2 = "";
+    private String MinchaText = "";
+    private String Maariv1 = "";
+    private String Maariv2 = "";
+    private String Maariv_Text = "";
+    private String FridayMincha = "";
+    private String FridayMinchaText = "";
+    private String ShabbosShacharis = "";
+    private String ShabbosShacharis2 = "";
+    private String ShabbosShacharis3 = "";
+    private String ShabbosShacharisText = "";
+    private String ShabbosMincha = "";
+    private String ShabbosMinchaText = "";
+    private String ShabbosMaariv = "";
+    private String ShabbosMaarivText = "";
+    private String Nusach = "";
+    private String Miscellaneous = "";
+    private String Shiur = "";
+    private String latitude = "";
+    private String longitude = "";
+    private String SubmitterName = "";
+    private String SubmitterEmail = "";
+    private String Remote_computer_name = "";
+    private String User_name = "";
+    private String Browser_type = "";
+    private String Added = "";
+    private String Updated = "";
+    private String img1 = "";
+    private String img2 = "";
+    private String img3 = "";
+    private String img4 = "";
+    private String img5 = "";
+    private String img1thumb = "";
     private String img1title = "";
     private String img2title = "";
     private String img3title = "";
     private String img4title = "";
     private String img5title = "";
-    private int mvalid = 0;
+    private int valid = 0;
 
-    public double getMdistance() {
-        return mdistance;
+    public double getDistance() {
+        return distance;
     }
 
-    public void setMdistance(double mdistance) {
-        this.mdistance = mdistance;
+    public void setDistance(double distance) {
+        this.distance = distance;
     }
 
     public int getID() {
-        return mID;
+        return ID;
     }
 
     public void setID(int ID) {
-        mID = ID;
+        this.ID = ID;
     }
 
     public String getName() {
-        return mName;
+        return Name;
     }
 
     public void setName(String name) {
-        mName = name;
+        Name = name;
     }
 
     public String getAddress() {
-        return mAddress;
+        return Address;
     }
 
     public void setAddress(String address) {
-        mAddress = address;
+        Address = address;
     }
 
     public String getAddress2() {
-        return mAddress2;
+        return Address2;
     }
 
     public void setAddress2(String address2) {
-        mAddress2 = address2;
+        Address2 = address2;
     }
 
     public String getCity() {
-        return mCity;
+        return City;
     }
 
     public void setCity(String city) {
-        mCity = city;
+        City = city;
     }
 
     public String getState() {
-        return mState;
+        return State;
     }
 
     public void setState(String state) {
-        mState = state;
+        State = state;
     }
 
     public String getZip() {
-        return mZip;
+        return Zip;
     }
 
     public void setZip(String zip) {
-        mZip = zip;
+        Zip = zip;
     }
 
     public String getCountry() {
-        return mCountry;
+        return Country;
     }
 
     public void setCountry(String country) {
-        mCountry = country;
+        Country = country;
     }
 
     public String getPhone1() {
-        return mPhone1;
+        return Phone1;
     }
 
     public void setPhone1(String phone1) {
-        mPhone1 = phone1;
+        Phone1 = phone1;
     }
 
     public String getPhone2() {
-        return mPhone2;
+        return Phone2;
     }
 
     public void setPhone2(String phone2) {
-        mPhone2 = phone2;
+        Phone2 = phone2;
     }
 
     public String getEmail() {
-        return mEmail;
+        return Email;
     }
 
     public void setEmail(String email) {
-        mEmail = email;
+        Email = email;
     }
 
     public String getWebsite() {
-        return mWebsite;
+        return Website;
     }
 
     public void setWebsite(String website) {
-        mWebsite = website;
+        Website = website;
     }
 
     public String getRabbi() {
-        return mRabbi;
+        return Rabbi;
     }
 
     public void setRabbi(String rabbi) {
-        mRabbi = rabbi;
+        Rabbi = rabbi;
     }
 
     public String getShacharisSun1() {
-        return mShacharisSun1;
+        return ShacharisSun1;
     }
 
     public void setShacharisSun1(String shacharisSun1) {
-        mShacharisSun1 = shacharisSun1;
+        ShacharisSun1 = shacharisSun1;
     }
 
     public String getShacharisSun2() {
-        return mShacharisSun2;
+        return ShacharisSun2;
     }
 
     public void setShacharisSun2(String shacharisSun2) {
-        mShacharisSun2 = shacharisSun2;
+        ShacharisSun2 = shacharisSun2;
     }
 
     public String getShacharisSun3() {
-        return mShacharisSun3;
+        return ShacharisSun3;
     }
 
     public void setShacharisSun3(String shacharisSun3) {
-        mShacharisSun3 = shacharisSun3;
+        ShacharisSun3 = shacharisSun3;
     }
 
     public String getShacharisSun4() {
-        return mShacharisSun4;
+        return ShacharisSun4;
     }
 
     public void setShacharisSun4(String shacharisSun4) {
-        mShacharisSun4 = shacharisSun4;
+        ShacharisSun4 = shacharisSun4;
     }
 
     public String getShacharisSun5() {
-        return mShacharisSun5;
+        return ShacharisSun5;
     }
 
     public void setShacharisSun5(String shacharisSun5) {
-        mShacharisSun5 = shacharisSun5;
+        ShacharisSun5 = shacharisSun5;
     }
 
     public String getShacharisSunTxt() {
-        return mShacharisSunTxt;
+        return ShacharisSunTxt;
     }
 
     public void setShacharisSunTxt(String shacharisSunTxt) {
-        mShacharisSunTxt = shacharisSunTxt;
+        ShacharisSunTxt = shacharisSunTxt;
     }
 
     public String getShacharisMTh1() {
-        return mShacharisMTh1;
+        return ShacharisMTh1;
     }
 
     public void setShacharisMTh1(String shacharisMTh1) {
-        mShacharisMTh1 = shacharisMTh1;
+        ShacharisMTh1 = shacharisMTh1;
     }
 
     public String getShacharisMTh2() {
-        return mShacharisMTh2;
+        return ShacharisMTh2;
     }
 
     public void setShacharisMTh2(String shacharisMTh2) {
-        mShacharisMTh2 = shacharisMTh2;
+        ShacharisMTh2 = shacharisMTh2;
     }
 
     public String getShacharisMTh3() {
-        return mShacharisMTh3;
+        return ShacharisMTh3;
     }
 
     public void setShacharisMTh3(String shacharisMTh3) {
-        mShacharisMTh3 = shacharisMTh3;
+        ShacharisMTh3 = shacharisMTh3;
     }
 
     public String getShacharisMTh4() {
-        return mShacharisMTh4;
+        return ShacharisMTh4;
     }
 
     public void setShacharisMTh4(String shacharisMTh4) {
-        mShacharisMTh4 = shacharisMTh4;
+        ShacharisMTh4 = shacharisMTh4;
     }
 
     public String getShacharisMTh5() {
-        return mShacharisMTh5;
+        return ShacharisMTh5;
     }
 
     public void setShacharisMTh5(String shacharisMTh5) {
-        mShacharisMTh5 = shacharisMTh5;
+        ShacharisMTh5 = shacharisMTh5;
     }
 
     public String getShacharisMThTxt() {
-        return mShacharisMThTxt;
+        return ShacharisMThTxt;
     }
 
     public void setShacharisMThTxt(String shacharisMThTxt) {
-        mShacharisMThTxt = shacharisMThTxt;
+        ShacharisMThTxt = shacharisMThTxt;
     }
 
     public String getShacharisTWF1() {
-        return mShacharisTWF1;
+        return ShacharisTWF1;
     }
 
     public void setShacharisTWF1(String shacharisTWF1) {
-        mShacharisTWF1 = shacharisTWF1;
+        ShacharisTWF1 = shacharisTWF1;
     }
 
     public String getShacharisTWF2() {
-        return mShacharisTWF2;
+        return ShacharisTWF2;
     }
 
     public void setShacharisTWF2(String shacharisTWF2) {
-        mShacharisTWF2 = shacharisTWF2;
+        ShacharisTWF2 = shacharisTWF2;
     }
 
     public String getShacharisTWF3() {
-        return mShacharisTWF3;
+        return ShacharisTWF3;
     }
 
     public void setShacharisTWF3(String shacharisTWF3) {
-        mShacharisTWF3 = shacharisTWF3;
+        ShacharisTWF3 = shacharisTWF3;
     }
 
     public String getShacharisTWF4() {
-        return mShacharisTWF4;
+        return ShacharisTWF4;
     }
 
     public void setShacharisTWF4(String shacharisTWF4) {
-        mShacharisTWF4 = shacharisTWF4;
+        ShacharisTWF4 = shacharisTWF4;
     }
 
     public String getShacharisTWF5() {
-        return mShacharisTWF5;
+        return ShacharisTWF5;
     }
 
     public void setShacharisTWF5(String shacharisTWF5) {
-        mShacharisTWF5 = shacharisTWF5;
+        ShacharisTWF5 = shacharisTWF5;
     }
 
     public String getShacharisTWFTxt() {
-        return mShacharisTWFTxt;
+        return ShacharisTWFTxt;
     }
 
     public void setShacharisTWFTxt(String shacharisTWFTxt) {
-        mShacharisTWFTxt = shacharisTWFTxt;
+        ShacharisTWFTxt = shacharisTWFTxt;
     }
 
     public String getShacharisRCh1() {
-        return mShacharisRCh1;
+        return ShacharisRCh1;
     }
 
     public void setShacharisRCh1(String shacharisRCh1) {
-        mShacharisRCh1 = shacharisRCh1;
+        ShacharisRCh1 = shacharisRCh1;
     }
 
     public String getShacharisRCh2() {
-        return mShacharisRCh2;
+        return ShacharisRCh2;
     }
 
     public void setShacharisRCh2(String shacharisRCh2) {
-        mShacharisRCh2 = shacharisRCh2;
+        ShacharisRCh2 = shacharisRCh2;
     }
 
     public String getShacharisRCh3() {
-        return mShacharisRCh3;
+        return ShacharisRCh3;
     }
 
     public void setShacharisRCh3(String shacharisRCh3) {
-        mShacharisRCh3 = shacharisRCh3;
+        ShacharisRCh3 = shacharisRCh3;
     }
 
     public String getShacharisRCh4() {
-        return mShacharisRCh4;
+        return ShacharisRCh4;
     }
 
     public void setShacharisRCh4(String shacharisRCh4) {
-        mShacharisRCh4 = shacharisRCh4;
+        ShacharisRCh4 = shacharisRCh4;
     }
 
     public String getShacharisRCh5() {
-        return mShacharisRCh5;
+        return ShacharisRCh5;
     }
 
     public void setShacharisRCh5(String shacharisRCh5) {
-        mShacharisRCh5 = shacharisRCh5;
+        ShacharisRCh5 = shacharisRCh5;
     }
 
     public String getShacharisRChTxt() {
-        return mShacharisRChTxt;
+        return ShacharisRChTxt;
     }
 
     public void setShacharisRChTxt(String shacharisRChTxt) {
-        mShacharisRChTxt = shacharisRChTxt;
+        ShacharisRChTxt = shacharisRChTxt;
     }
 
     public String getMincha1() {
-        return mMincha1;
+        return Mincha1;
     }
 
     public void setMincha1(String mincha1) {
-        mMincha1 = mincha1;
+        Mincha1 = mincha1;
     }
 
     public String getMincha2() {
-        return mMincha2;
+        return Mincha2;
     }
 
     public void setMincha2(String mincha2) {
-        mMincha2 = mincha2;
+        Mincha2 = mincha2;
     }
 
     public String getMinchaText() {
-        return mMinchaText;
+        return MinchaText;
     }
 
     public void setMinchaText(String minchaText) {
-        mMinchaText = minchaText;
+        MinchaText = minchaText;
     }
 
     public String getMaariv1() {
-        return mMaariv1;
+        return Maariv1;
     }
 
     public void setMaariv1(String maariv1) {
-        mMaariv1 = maariv1;
+        Maariv1 = maariv1;
     }
 
     public String getMaariv2() {
-        return mMaariv2;
+        return Maariv2;
     }
 
     public void setMaariv2(String maariv2) {
-        mMaariv2 = maariv2;
+        Maariv2 = maariv2;
     }
 
     public String getMaariv_Text() {
-        return mMaariv_Text;
+        return Maariv_Text;
     }
 
     public void setMaariv_Text(String maariv_Text) {
-        mMaariv_Text = maariv_Text;
+        Maariv_Text = maariv_Text;
     }
 
     public String getFridayMincha() {
-        return mFridayMincha;
+        return FridayMincha;
     }
 
     public void setFridayMincha(String fridayMincha) {
-        mFridayMincha = fridayMincha;
+        FridayMincha = fridayMincha;
     }
 
     public String getFridayMinchaText() {
-        return mFridayMinchaText;
+        return FridayMinchaText;
     }
 
     public void setFridayMinchaText(String fridayMinchaText) {
-        mFridayMinchaText = fridayMinchaText;
+        FridayMinchaText = fridayMinchaText;
     }
 
     public String getShabbosShacharis() {
-        return mShabbosShacharis;
+        return ShabbosShacharis;
     }
 
     public void setShabbosShacharis(String shabbosShacharis) {
-        mShabbosShacharis = shabbosShacharis;
+        ShabbosShacharis = shabbosShacharis;
     }
 
     public String getShabbosShacharis2() {
-        return mShabbosShacharis2;
+        return ShabbosShacharis2;
     }
 
     public void setShabbosShacharis2(String shabbosShacharis2) {
-        mShabbosShacharis2 = shabbosShacharis2;
+        ShabbosShacharis2 = shabbosShacharis2;
     }
 
     public String getShabbosShacharis3() {
-        return mShabbosShacharis3;
+        return ShabbosShacharis3;
     }
 
     public void setShabbosShacharis3(String shabbosShacharis3) {
-        mShabbosShacharis3 = shabbosShacharis3;
+        ShabbosShacharis3 = shabbosShacharis3;
     }
 
     public String getShabbosShacharisText() {
-        return mShabbosShacharisText;
+        return ShabbosShacharisText;
     }
 
     public void setShabbosShacharisText(String shabbosShacharisText) {
-        mShabbosShacharisText = shabbosShacharisText;
+        ShabbosShacharisText = shabbosShacharisText;
     }
 
     public String getShabbosMincha() {
-        return mShabbosMincha;
+        return ShabbosMincha;
     }
 
     public void setShabbosMincha(String shabbosMincha) {
-        mShabbosMincha = shabbosMincha;
+        ShabbosMincha = shabbosMincha;
     }
 
     public String getShabbosMinchaText() {
-        return mShabbosMinchaText;
+        return ShabbosMinchaText;
     }
 
     public void setShabbosMinchaText(String shabbosMinchaText) {
-        mShabbosMinchaText = shabbosMinchaText;
+        ShabbosMinchaText = shabbosMinchaText;
     }
 
     public String getShabbosMaariv() {
-        return mShabbosMaariv;
+        return ShabbosMaariv;
     }
 
     public void setShabbosMaariv(String shabbosMaariv) {
-        mShabbosMaariv = shabbosMaariv;
+        ShabbosMaariv = shabbosMaariv;
     }
 
     public String getShabbosMaarivText() {
-        return mShabbosMaarivText;
+        return ShabbosMaarivText;
     }
 
     public void setShabbosMaarivText(String shabbosMaarivText) {
-        mShabbosMaarivText = shabbosMaarivText;
+        ShabbosMaarivText = shabbosMaarivText;
     }
 
     public String getNusach() {
-        return mNusach;
+        return Nusach;
     }
 
     public void setNusach(String nusach) {
-        mNusach = nusach;
+        Nusach = nusach;
     }
 
     public String getMiscellaneous() {
-        return mMiscellaneous;
+        return Miscellaneous;
     }
 
     public void setMiscellaneous(String miscellaneous) {
-        mMiscellaneous = miscellaneous;
+        Miscellaneous = miscellaneous;
     }
 
     public String getShiur() {
-        return mShiur;
+        return Shiur;
     }
 
     public void setShiur(String shiur) {
-        mShiur = shiur;
+        Shiur = shiur;
     }
 
-    public String getMlatitude() {
-        return mlatitude;
+    public String getLatitude() {
+        return latitude;
     }
 
-    public void setMlatitude(String mlatitude) {
-        this.mlatitude = mlatitude;
+    public void setLatitude(String latitude) {
+        this.latitude = latitude;
     }
 
-    public String getMlongitude() {
-        return mlongitude;
+    public String getLongitude() {
+        return longitude;
     }
 
-    public void setMlongitude(String mlongitude) {
-        this.mlongitude = mlongitude;
+    public void setLongitude(String longitude) {
+        this.longitude = longitude;
     }
 
     public String getSubmitterName() {
-        return mSubmitterName;
+        return SubmitterName;
     }
 
     public void setSubmitterName(String submitterName) {
-        mSubmitterName = submitterName;
+        SubmitterName = submitterName;
     }
 
     public String getSubmitterEmail() {
-        return mSubmitterEmail;
+        return SubmitterEmail;
     }
 
     public void setSubmitterEmail(String submitterEmail) {
-        mSubmitterEmail = submitterEmail;
+        SubmitterEmail = submitterEmail;
     }
 
     public String getRemote_computer_name() {
-        return mRemote_computer_name;
+        return Remote_computer_name;
     }
 
     public void setRemote_computer_name(String remote_computer_name) {
-        mRemote_computer_name = remote_computer_name;
+        Remote_computer_name = remote_computer_name;
     }
 
     public String getUser_name() {
-        return mUser_name;
+        return User_name;
     }
 
     public void setUser_name(String user_name) {
-        mUser_name = user_name;
+        User_name = user_name;
     }
 
     public String getBrowser_type() {
-        return mBrowser_type;
+        return Browser_type;
     }
 
     public void setBrowser_type(String browser_type) {
-        mBrowser_type = browser_type;
+        Browser_type = browser_type;
     }
 
     public String getAdded() {
-        return mAdded;
+        return Added;
     }
 
     public void setAdded(String added) {
-        mAdded = added;
+        Added = added;
     }
 
     public String getUpdated() {
-        return mUpdated;
+        return Updated;
     }
 
     public void setUpdated(String updated) {
-        mUpdated = updated;
+        Updated = updated;
     }
 
-    public String getMimg1() {
-        return mimg1;
+    public String getImg1() {
+        return img1;
     }
 
-    public void setMimg1(String mimg1) {
-        this.mimg1 = mimg1;
+    public void setImg1(String img1) {
+        this.img1 = img1;
     }
 
-    public String getMimg2() {
-        return mimg2;
+    public String getImg2() {
+        return img2;
     }
 
-    public void setMimg2(String mimg2) {
-        this.mimg2 = mimg2;
+    public void setImg2(String img2) {
+        this.img2 = img2;
     }
 
-    public String getMimg3() {
-        return mimg3;
+    public String getImg3() {
+        return img3;
     }
 
-    public void setMimg3(String mimg3) {
-        this.mimg3 = mimg3;
+    public void setImg3(String img3) {
+        this.img3 = img3;
     }
 
-    public String getMimg4() {
-        return mimg4;
+    public String getImg4() {
+        return img4;
     }
 
-    public void setMimg4(String mimg4) {
-        this.mimg4 = mimg4;
+    public void setImg4(String img4) {
+        this.img4 = img4;
     }
 
-    public String getMimg5() {
-        return mimg5;
+    public String getImg5() {
+        return img5;
     }
 
-    public void setMimg5(String mimg5) {
-        this.mimg5 = mimg5;
+    public void setImg5(String img5) {
+        this.img5 = img5;
     }
 
-    public String getMimg1thumb() {
-        return mimg1thumb;
+    public String getImg1thumb() {
+        return img1thumb;
     }
 
-    public void setMimg1thumb(String mimg1thumb) {
-        this.mimg1thumb = mimg1thumb;
+    public void setImg1thumb(String img1thumb) {
+        this.img1thumb = img1thumb;
     }
 
     public String getImg1title() {
@@ -702,10 +701,10 @@ public class minyanim {
     }
 
     public int getMvalid() {
-        return mvalid;
+        return valid;
     }
 
     public void setMvalid(int mvalid) {
-        this.mvalid = mvalid;
+        this.valid = mvalid;
     }
 }

@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import com.google.gson.*;
@@ -103,11 +104,14 @@ public class JDaven {
      * @param jsonToProcess The String containing the json that should be processed
      */
     private void processJson(String jsonToProcess) {
-        jsonToProcess = jsonToProcess.substring(14);
+        jsonToProcess = jsonToProcess.substring(29);
+        jsonToProcess = jsonToProcess.substring(0, jsonToProcess.length() - 2);
         jsonToProcess = jsonToProcess.replace("[", "[{");
+        jsonToProcess = jsonToProcess.replace("[{{", "[{");
         System.out.println(jsonToProcess);
         Gson gson = new Gson();
         minyanim[] min = gson.fromJson(jsonToProcess, minyanim[].class);
+        System.out.println(min[0].getCity());
     }
 
 
