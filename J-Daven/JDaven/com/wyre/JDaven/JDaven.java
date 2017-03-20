@@ -1,33 +1,28 @@
 package com.wyre.JDaven;
 
-import com.eclipsesource.json.Json;
-import com.eclipsesource.json.JsonArray;
-import com.eclipsesource.json.JsonObject;
-import com.eclipsesource.json.JsonValue;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.ArrayList;
 import java.util.List;
 
+import com.google.gson.*;
 /**
  * Created by yaakov on 3/12/17.
  */
 public class JDaven {
     private String mBaseUrl = "http://godaven.com/db/davenapi.aspx?";
-    private List<Minyan> mMinyanList;
-
+    private minyanim[] mMinyanArray = new minyanim[20];
 
     /**
      * This constructor takes a string containing the name of the shul and returns a list of shuls with their minyanim
      *
      * @param shulName The name of the shul to get minyanim for
      */
-    public JDaven(String shulName) {
-
+    public JDaven(String shulName) throws IOException {
+        processJson(gDApiRetreiver(mBaseUrl + "name=" + shulName));
 
     }
 
@@ -65,9 +60,8 @@ public class JDaven {
      * @param latitude  The latitude to get minyanim nearby
      * @param longitude The longitude to get minyanim nearby
      */
-    public JDaven(double latitude, double longitude) {
-
-        processJson(gDApiRetreiver())
+    public JDaven(double latitude, double longitude) throws IOException {
+        processJson(gDApiRetreiver(mBaseUrl + "lat=" + latitude + "&lon=" + longitude));
     }
 
     /**
@@ -75,9 +69,9 @@ public class JDaven {
      * @param longitude    The longitude to get minyanim nearby
      * @param numOfResults The number of results to retreive, max of 20
      */
-    public JDaven(double latitude, double longitude, int numOfResults) {
+    public JDaven(double latitude, double longitude, int numOfResults) throws IOException {
 
-
+        processJson(gDApiRetreiver(mBaseUrl + "lat=" + latitude + "&lon=" + longitude + "&results=" + numOfResults));
     }
 
     /**
@@ -105,12 +99,15 @@ public class JDaven {
 
     /**
      * This method process json that was returned from the Go Daven Api and stores it in the minyanim list
-     *
+     * Uses gson to process the Json
      * @param jsonToProcess The String containing the json that should be processed
      */
     private void processJson(String jsonToProcess) {
-
-
+        jsonToProcess = jsonToProcess.substring(14);
+        jsonToProcess = jsonToProcess.replace("[", "[{");
+        System.out.println(jsonToProcess);
+        Gson gson = new Gson();
+        minyanim[] min = gson.fromJson(jsonToProcess, minyanim[].class);
     }
 
 

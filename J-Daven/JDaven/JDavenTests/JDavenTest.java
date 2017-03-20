@@ -1,7 +1,7 @@
 package JDavenTests;
 
 import org.junit.Test;
-
+import com.google.gson.*;
 import static org.junit.Assert.*;
 
 import com.wyre.JDaven.*;
@@ -24,7 +24,10 @@ public class JDavenTest {
     public void TestJDavenFull() {
         System.out.println("test started");
         try {
-            JDaven daven = new JDaven("kollel bnei torah", 20);
+            //  JDaven daven = new JDaven("kollel bnei torah", 20);
+            minyanim my = new minyanim();
+            Gson gson = new Gson();
+            System.out.println(gson.toJson(my));
         } catch (Exception ex) {
             ex.printStackTrace();
 
