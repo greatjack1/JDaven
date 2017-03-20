@@ -72,6 +72,7 @@ public class minyanim {
     private String mAdded = "";
     private String mUpdated = "";
     private String mimg1 = "";
+
     private String mimg2 = "";
     private String mimg3 = "";
     private String mimg4 = "";
