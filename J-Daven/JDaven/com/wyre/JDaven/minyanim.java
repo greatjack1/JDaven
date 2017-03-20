@@ -700,11 +700,11 @@ public class minyanim {
         this.img5title = img5title;
     }
 
-    public int getMvalid() {
+    public int getValid() {
         return valid;
     }
 
-    public void setMvalid(int mvalid) {
+    public void setValid(int mvalid) {
         this.valid = mvalid;
     }
 }
