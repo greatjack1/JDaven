@@ -4,6 +4,7 @@ A Java Library that can get minyanim for pretty much anywhere in the World!
 There are three ways to search for minyanim and each way is overloaded to allow you to specify the max amount of results to receive
 
 Note: The max is twenty.
+
 1-By shul Name. JDaven daven = new JDaven("Chabad Jewish Center");
 
 2-By Latitude and Longitude. Note-They must be double values otherwise the compiler will choose the zipcode version of the constructor. Jdaven daven = new JDaven(72.143,42.436);
