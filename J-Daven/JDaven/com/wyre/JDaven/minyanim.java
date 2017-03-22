@@ -1,12 +1,14 @@
 package com.wyre.JDaven;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * This is a pojo for gson to deserialize json to
  * Created by yaakov on 3/15/17.
  */
 public class minyanim {
-    private double distance = 0.0;
-    private int ID = 0;
+    private double distance = -1.0;
+    private int ID = -1;
     private String Name = "";
     private String Address = "";
     private String Address2 = "";
@@ -48,6 +50,8 @@ public class minyanim {
     private String MinchaText = "";
     private String Maariv1 = "";
     private String Maariv2 = "";
+    //use a serialized name attribute for the MaarivText property since it has a space in it
+    @SerializedName("Maariv Text")
     private String Maariv_Text = "";
     private String FridayMincha = "";
     private String FridayMinchaText = "";
