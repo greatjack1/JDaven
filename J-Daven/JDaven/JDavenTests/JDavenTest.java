@@ -23,7 +23,7 @@ public class JDavenTest {
 
     @Test
     public void TestShulName() {
-        System.out.println("test started");
+        System.out.println("Testing Shul Name");
         try {
             JDaven daven = new JDaven("chabad jewish center", 20);
             //check that it got the proper name
@@ -38,76 +38,30 @@ public class JDavenTest {
 
     @Test
     public void TestZipCode() {
-        System.out.println("test started");
+        System.out.println("Testing Shul Zipcode");
         try {
-            JDaven daven = new JDaven("kollel bnei torah", 20);
+            JDaven daven = new JDaven(90001, 20);
+            Assert.assertEquals(daven.getMinyanim()[0].getName(), "Chabad Downtown Los Angeles East");
         } catch (Exception ex) {
             ex.printStackTrace();
 
-            minyanim my = new minyanim();
-            Gson gson = new Gson();
-            System.out.println(gson.toJson(my));
+
         }
 
     }
 
     @Test
     public void TestLatitudeLongitude() {
-        System.out.println("test started");
+        System.out.println("Testing Latitude and Longitude");
         try {
-            JDaven daven = new JDaven("kollel bnei torah", 20);
+            JDaven daven = new JDaven(42.9876, -72.345, 20);
+            Assert.assertEquals(daven.getMinyanim()[0].getName(), "Chabad of Manchester Vermont");
         } catch (Exception ex) {
             ex.printStackTrace();
 
-            minyanim my = new minyanim();
-            Gson gson = new Gson();
-            System.out.println(gson.toJson(my));
         }
 
     }
 
-    @Test
-    public void TestMultipleResults() {
-        System.out.println("test started");
-        try {
-            JDaven daven = new JDaven("kollel bnei torah", 20);
-        } catch (Exception ex) {
-            ex.printStackTrace();
-
-            minyanim my = new minyanim();
-            Gson gson = new Gson();
-            System.out.println(gson.toJson(my));
-        }
-
-    }
-
-    @Test
-    public void TestJDavenFull() {
-        System.out.println("test started");
-        try {
-            JDaven daven = new JDaven("kollel bnei torah", 20);
-        } catch (Exception ex) {
-            ex.printStackTrace();
-
-            minyanim my = new minyanim();
-            Gson gson = new Gson();
-            System.out.println(gson.toJson(my));
-        }
-
-    }
-
-    @Test
-    public void TestJDavenstable() {
-        System.out.println("test started");
-        try {
-            JDaven daven = new JDaven("kollel bnei torah", 20);
-        } catch (Exception ex) {
-            ex.printStackTrace();
-
-            minyanim my = new minyanim();
-            Gson gson = new Gson();
-            System.out.println(gson.toJson(my));
-        }
-
-    }
+  
 }

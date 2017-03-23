@@ -125,7 +125,13 @@ public class JDaven {
         jsonToProcess = jsonToProcess.replace("[{{", "[{");
         //create the Gson instance to process the json
         Gson gson = new Gson();
-        mMinyanArray = gson.fromJson(jsonToProcess, minyanim[].class);
+        try {
+            mMinyanArray = gson.fromJson(jsonToProcess, minyanim[].class);
+        } catch (Exception ex) {
+            //set the minyanim array to null to alert the programmer that we werent able to process any minyanim
+            mMinyanArray = null;
+
+        }
 
     }
 
